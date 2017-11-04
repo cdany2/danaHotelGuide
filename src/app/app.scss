@@ -60,7 +60,6 @@ ion-content {
   text-space: 2px;
   color: rgb(255, 255, 255);
   padding: 15px;
-  margin-top: 84px;
   font-size: 3.3vh;
   background-color: rgba(68, 55, 51, 0.55);
   border-radius: 2px;
@@ -89,4 +88,11 @@ ion-content {
 .mini-title {
   font-weight: bold;
   margin: 1em 0;
+}
+
+.job-title {
+  font-size: 3vh;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 1vh;
 }
