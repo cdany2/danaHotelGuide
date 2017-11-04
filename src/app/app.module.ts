@@ -33,7 +33,7 @@ import {JobListPage} from "../pages/job-list/job-list";
     HistoryPage,
     StrategyPage,
     CommunicationPage,
-    FinishPage,
+    FinishPage
   ],
   imports: [
     BrowserModule,
