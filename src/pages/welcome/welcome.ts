@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { JobListPage } from '../job-list/job-list'
 /**
  * Generated class for the WelcomePage page.
  *
@@ -20,6 +20,10 @@ export class WelcomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
+  }
+
+  public next() {
+    this.navCtrl.push(JobListPage)
   }
 
 }
