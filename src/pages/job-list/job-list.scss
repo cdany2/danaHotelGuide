@@ -1,3 +1,13 @@
 page-job-list {
+  .job-list {
+    font-size: 2em;
+  }
 
+  .job-list-item {
+    border: 2px solid white;
+  }
+
+  .job-reviewed-indication {
+    display: inline-block;
+  }
 }
