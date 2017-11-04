@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ReceptionPage page.
+ * Generated class for the OrganizationPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,15 +10,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-reception',
-  templateUrl: 'reception.html',
+  selector: 'page-organization',
+  templateUrl: 'organization.html',
 })
-export class ReceptionPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+export class OrganizationPage {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ReceptionPage');
+    console.log('ionViewDidLoad OrganizationPage');
   }
+
 }

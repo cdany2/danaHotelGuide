@@ -14,19 +14,21 @@ export class ProgressTrackerProvider {
 
   constructor(public http: Http) {
     this.progress_tracker = {
-      1: false,
-      2: false,
-      3: false,
-      4: false,
-      5: false
+      'HISTORIA DEL HOTEL': true,
+      'MISIÓN, VISIÓN Y VALORES': true,
+      'HORARIOS Y SALARIO': false,
+      'SISTEMAS DE COMUNICACIÓN': true,
+      'ORGANIGRAMA EMPRESARIAL': true,
+      'LINEAS ESTRATEGICAS DE LA EMPRESA': true,
+      'RECEPCIÓN': true,
     };
   }
 
-  setJobAsReviewd(job) {
+  setJobAsReviewed(job) {
     this.progress_tracker[job] = true;
   }
 
-  isJobReviewd(job){
+  isJobReviewed(job){
     return this.progress_tracker[job];
   }
 

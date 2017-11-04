@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
-import {ResturantPage} from '.././resturant/resturant';
-import {ReceptionPage} from '.././reception/reception'
+import {ReceptionPage} from '../reception/reception'
 import {ProgressTrackerProvider} from '../../providers/progress-tracker/progress-tracker';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {componentFactoryName} from "@angular/compiler";
+import {HistoryPage} from "../history/history";
+import {MissionPage} from "../mission/mission";
+import {HoursPage} from "../hours/hours";
+import {CommunicationPage} from "../communication/communication";
+import {OrganizationPage} from "../organization/organization";
+import {StrategyPage} from "../strategy/strategy";
+import {FinishPage} from "../finish/finish";
 
 /**
  * Generated class for the JobListPage page.
@@ -18,13 +23,19 @@ import {componentFactoryName} from "@angular/compiler";
   templateUrl: 'job-list.html',
 })
 export class JobListPage {
-  componentsMap: any;
+  jobsMapper: any;
+  objectKeys = Object.keys;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public  progressTrackerProvider: ProgressTrackerProvider) {
-    this.componentsMap = {
-      restaurant: ResturantPage,
-      reception: ReceptionPage
-    }
+    this.jobsMapper = {
+      'HISTORIA DEL HOTEL': HistoryPage,
+      'MISIÓN, VISIÓN Y VALORES': MissionPage,
+      'HORARIOS Y SALARIO': HoursPage,
+      'SISTEMAS DE COMUNICACIÓN': CommunicationPage,
+      'ORGANIGRAMA EMPRESARIAL': OrganizationPage,
+      'LINEAS ESTRATEGICAS DE LA EMPRESA': StrategyPage,
+      'RECEPCIÓN': ReceptionPage,
+    };
   }
 
   ionViewDidLoad() {
@@ -32,8 +43,23 @@ export class JobListPage {
   }
 
   public selectJob(job) {
-    this.progressTrackerProvider.setJobAsReviewd(job);
-    this.navCtrl.push(this.componentsMap[job]);
+    this.navCtrl.push(this.jobsMapper[job]);
+    this.progressTrackerProvider.setJobAsReviewed(job);
   }
 
+  public isJobReviewed(job) {
+    return this.progressTrackerProvider.isJobReviewed(job);
+  }
+
+  public getJobItemClass(job) {
+    return this.isJobReviewed(job) ? 'reviewed' : null;
+  }
+
+  public didReviewAll() {
+    return !this.progressTrackerProvider.didReviewAll();
+  }
+
+  public moveToFinishPage() {
+    this.navCtrl.push(FinishPage);
+  }
 }

@@ -8,20 +8,51 @@ import { MyApp } from './app.component';
 import { ProgressTrackerProvider } from '../providers/progress-tracker/progress-tracker';
 import { WelcomePage } from '../pages/welcome/welcome';
 
+import { HttpModule } from '@angular/http';
+import {HistoryPage} from "../pages/history/history";
+import {ReceptionPage} from "../pages/reception/reception";
+import {OrganizationPage} from "../pages/organization/organization";
+import {MissionPage} from "../pages/mission/mission";
+import {HoursPage} from "../pages/hours/hours";
+import {StrategyPage} from "../pages/strategy/strategy";
+import {CommunicationPage} from "../pages/communication/communication";
+import {FinishPage} from "../pages/finish/finish";
+
 
 @NgModule({
   declarations: [
     MyApp,
-    WelcomePage
+    JobListPage,
+    WelcomePage,
+    HistoryPage,
+    HoursPage,
+    MissionPage,
+    OrganizationPage,
+    ReceptionPage,
+    HistoryPage,
+    StrategyPage,
+    CommunicationPage,
+    FinishPage,
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    WelcomePage
+    JobListPage,
+    WelcomePage,
+    HistoryPage,
+    HoursPage,
+    MissionPage,
+    OrganizationPage,
+    ReceptionPage,
+    HistoryPage,
+    StrategyPage,
+    CommunicationPage,
+    FinishPage
   ],
   providers: [
     StatusBar,

@@ -4,15 +4,22 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>jobList</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
 
 <ion-content padding>
-
+  <div class="job-list">
+    <ion-card *ngFor="let job of objectKeys(jobsMapper)" (click)="selectJob(job)" class="job-list-item">
+      <ion-card-content [ngClass]="getJobItemClass(job)">
+        <div class="job-reviewed-indication">
+          <div *ngIf="isJobReviewed(job)">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+          </div>
+          <div *ngIf="!isJobReviewed(job)">
+            <ion-icon name="radio-button-off"></ion-icon>
+          </div>
+        </div>
+        {{job}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <button ion-button [disabled]="didReviewAll()" (click)="moveToFinishPage()">I'm Ready</button>
 </ion-content>
