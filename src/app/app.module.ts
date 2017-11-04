@@ -5,13 +5,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { WelcomePage } from '../pages/welcome/welcome';
 import { ProgressTrackerProvider } from '../providers/progress-tracker/progress-tracker';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    WelcomePage
   ],
   imports: [
     BrowserModule,
@@ -20,7 +20,7 @@ import { ProgressTrackerProvider } from '../providers/progress-tracker/progress-
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    WelcomePage
   ],
   providers: [
     StatusBar,
