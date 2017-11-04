@@ -21,5 +21,4 @@ export class ReceptionPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReceptionPage');
   }
-
 }
