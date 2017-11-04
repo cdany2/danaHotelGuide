@@ -6,7 +6,7 @@ page-job-list {
     color: white;
 
     .card-content {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     .job-title {
@@ -16,5 +16,7 @@ page-job-list {
 
   .job-reviewed-indication {
     display: inline-block;
+    .icon {
+    }
   }
 }
