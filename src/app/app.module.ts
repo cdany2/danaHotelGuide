@@ -17,6 +17,7 @@ import {HoursPage} from "../pages/hours/hours";
 import {StrategyPage} from "../pages/strategy/strategy";
 import {CommunicationPage} from "../pages/communication/communication";
 import {FinishPage} from "../pages/finish/finish";
+import {JobListPage} from "../pages/job-list/job-list";
 
 
 @NgModule({
