@@ -25,17 +25,16 @@ ion-content {
   background-color: black !important;
 }
 
-.toolbar-background-md{
+.custom-tool-bar-background {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-.button-md-dark{
+.custom-button {
   color: black;
   background-color: rgb(234, 241, 177);
   background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
-
-
 }
+
 .logo {
   width: 55vw;
   margin: 0 auto;
