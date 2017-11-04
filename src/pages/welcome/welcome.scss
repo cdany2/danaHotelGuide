@@ -1,6 +1,5 @@
 page-welcome {
   .mainBox {
-    height: 60vh;
     text-align: center;
     text-space: 2px;
     color: rgb(255, 255, 255);
@@ -12,8 +11,6 @@ page-welcome {
     box-shadow: 7px 9px 6px 0px rgba(0, 0, 0, 0.52), 0px 0px 0px 0px transparent;
     background-position: center;
     transition: ease-in-out 0.4s box-shadow, ease-in-out 0.4s opacity;
-
-
   }
 
 }
