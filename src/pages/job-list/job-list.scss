@@ -1,10 +1,17 @@
 page-job-list {
-  .job-list {
-    font-size: 2em;
-  }
 
   .job-list-item {
     border: 2px solid white;
+    background: none;
+    color: white;
+
+    .card-content {
+      font-size: 1.8rem;
+    }
+
+    .job-title {
+      display: inline-block;
+    }
   }
 
   .job-reviewed-indication {
