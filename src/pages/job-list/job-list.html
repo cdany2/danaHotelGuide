@@ -7,10 +7,15 @@
 
 <ion-content padding>
   <div class="job-list">
-    <ion-card *ngFor="let job of objectKeys(jobsMapper)" (click)="selectJob(job)">
+    <ion-card *ngFor="let job of objectKeys(jobsMapper)" (click)="selectJob(job)" class="job-list-item">
       <ion-card-content [ngClass]="getJobItemClass(job)">
-        <div *ngIf="isJobReviewed(job)">
-          <ion-icon name="planet"></ion-icon>
+        <div class="job-reviewed-indication">
+          <div *ngIf="isJobReviewed(job)">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+          </div>
+          <div *ngIf="!isJobReviewed(job)">
+            <ion-icon name="radio-button-off"></ion-icon>
+          </div>
         </div>
         {{job}}
       </ion-card-content>

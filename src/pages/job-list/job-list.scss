@@ -1,11 +1,13 @@
 page-job-list {
-  .job-list-item {
-    border: 1px black solid;
-    padding: 3% 0;
-    margin-bottom: 2%;
+  .job-list {
+    font-size: 2em;
   }
 
-  .reviewed {
-    background-color: green;
+  .job-list-item {
+    border: 2px solid white;
+  }
+
+  .job-reviewed-indication {
+    display: inline-block;
   }
 }
