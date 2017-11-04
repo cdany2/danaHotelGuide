@@ -21,5 +21,10 @@
       </ion-card-content>
     </ion-card>
   </div>
-  <button ion-button [disabled]="didReviewAll()" (click)="moveToFinishPage()">I'm Ready</button>
 </ion-content>
+
+<ion-footer>
+  <button ion-button full ion-button large icon-right color="dark" [disabled]="didReviewAll()" (click)="moveToFinishPage()" class="custom-button">
+    I'm Ready
+  </button>
+</ion-footer>
