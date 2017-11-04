@@ -4,7 +4,7 @@ import { FinishPage } from './finish';
 
 @NgModule({
   declarations: [
-    FinishPage,
+    FinishPage
   ],
   imports: [
     IonicPageModule.forChild(FinishPage),
