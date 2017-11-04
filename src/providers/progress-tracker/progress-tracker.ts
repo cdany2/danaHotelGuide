@@ -14,13 +14,13 @@ export class ProgressTrackerProvider {
 
   constructor(public http: Http) {
     this.progress_tracker = {
-      'HISTORIA DEL HOTEL': true,
-      'MISIÓN, VISIÓN Y VALORES': true,
+      'HISTORIA DEL HOTEL': false,
+      'MISIÓN, VISIÓN Y VALORES': false,
       'HORARIOS Y SALARIO': false,
-      'SISTEMAS DE COMUNICACIÓN': true,
-      'ORGANIGRAMA EMPRESARIAL': true,
-      'LINEAS ESTRATEGICAS DE LA EMPRESA': true,
-      'RECEPCIÓN': true,
+      'SISTEMAS DE COMUNICACIÓN': false,
+      'ORGANIGRAMA EMPRESARIAL': false,
+      'LINEAS ESTRATEGICAS DE LA EMPRESA': false,
+      'RECEPCIÓN': false,
     };
   }
 
