@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { JobListPage } from '../job-list/job-list'
 /**
  * Generated class for the WelcomePage page.
@@ -8,7 +8,6 @@ import { JobListPage } from '../job-list/job-list'
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html',

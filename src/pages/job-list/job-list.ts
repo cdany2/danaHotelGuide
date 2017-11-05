@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {ReceptionPage} from '../reception/reception'
 import {ProgressTrackerProvider} from '../../providers/progress-tracker/progress-tracker';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import {HistoryPage} from "../history/history";
 import {MissionPage} from "../mission/mission";
 import {HoursPage} from "../hours/hours";
@@ -17,7 +17,6 @@ import {FinishPage} from "../finish/finish";
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-job-list',
   templateUrl: 'job-list.html',
